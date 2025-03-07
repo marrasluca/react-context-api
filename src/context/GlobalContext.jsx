@@ -7,8 +7,8 @@ import axios from "axios";
 
 const GlobalContext = createContext()
 
-const GlobalProvider = ({ children }) => {
-    const [posts, setPosts] = useState([]);
+const GlobalProvider = ( { children } ) => {
+    const [posts, setPosts] = useState(null);
     const url = import.meta.env.VITE_ENDP0INT_URL
 
 
